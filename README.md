@@ -7,7 +7,7 @@ the handling of reflected fields and encodes arrays and objects instead of
 dropping them from logs. While logging simple fields is preferred for many
 reasons, having ugly data is often better than missing data.
 
-[![Build Status](https://travis-ci.org/sykesm/zap-logfmt.svg?branch=master)](https://travis-ci.org/sykesm/zap-logfmt)
+[![Build Status](https://github.com/sykesm/zap-logfmt/actions/workflows/ci.yml/badge.svg)](https://github.com/sykesm/zap-logfmt/actions/workflows/ci.yml)
 [![GoDoc](https://godoc.org/github.com/sykesm/zap-logfmt?status.svg)](https://godoc.org/github.com/sykesm/zap-logfmt)
 
 ## Usage
