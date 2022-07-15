@@ -383,6 +383,10 @@ func (enc *logfmtEncoder) EncodeEntry(ent zapcore.Entry, fields []zapcore.Field)
 			// keep output valid.
 			final.AppendString(ent.Caller.String())
 		}
+		if final.FunctionKey != "" {
+			final.addKey(final.FunctionKey)
+			final.AppendString(ent.Caller.Function)
+		}
 	}
 	if final.MessageKey != "" {
 		final.addKey(enc.MessageKey)
